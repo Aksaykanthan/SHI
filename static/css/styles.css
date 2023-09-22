@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+}
+
+body {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+.form-control{
+    background-color: rgb(45, 52, 61);
+}
+
+.rounded {
+    border-radius:.40rem!important
+}
+
+input::placeholder{
+    color: rgb(254, 254, 254);
+}
+
+input{
+    color: white;
+}
+
