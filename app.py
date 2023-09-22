@@ -17,10 +17,8 @@ chats = []
 def index():
     if request.method == "POST":
         prompt = request.form["user_input"]
-        print(prompt)
         
         answer = palm.generate_text(model=model,prompt=prompt,temperature=0,max_output_tokens=800)
-        print(answer.result)
         
         chat = {"question" : prompt,"answer":answer.result}
         chats.append(chat)        
